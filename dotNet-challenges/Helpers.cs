@@ -1,6 +1,6 @@
 namespace dotNet_challenges;
 
-public static class PrimeHelper
+public static class Helpers
 {
     public static bool IsPrime(int num)
     {
