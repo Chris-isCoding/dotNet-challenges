@@ -10,6 +10,7 @@ class MainMenu
             Console.WriteLine("Please select an option");
             Console.WriteLine("1 - to see solution to Challenge 1");
             Console.WriteLine("2 - to see solution to Challenge 2");
+            Console.WriteLine("3 - to see solution to Challenge 3");
             Console.WriteLine("q - to quit the program");
             var selectedOption = Console.ReadLine();
 
@@ -20,6 +21,9 @@ class MainMenu
                     break;
                 case "2":
                     Even.DisplayEvenNumsInRange();
+                    break;
+                case "3":
+                    Fibonacci.DisplayFibonacci();
                     break;
                 case "q":
                     userFinished = true;

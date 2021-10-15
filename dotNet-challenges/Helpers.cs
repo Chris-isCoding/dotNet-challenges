@@ -22,4 +22,11 @@ public static class Helpers
         }
         return true;
     }
+
+    public static int InputToInteger(string input, string dataTypeLabel)
+    {
+        if (int.TryParse(input, out var integer)) return integer;
+        Console.Write($"Please enter a {dataTypeLabel}: ");
+        return InputToInteger(Console.ReadLine(), dataTypeLabel);
+    }
 }
