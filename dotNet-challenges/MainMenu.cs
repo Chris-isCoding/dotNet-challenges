@@ -8,6 +8,9 @@ class MainMenu
         while (!userFinished)
         {
             Console.WriteLine("Please select an option");
+            Console.WriteLine("1 - to see solution to Challenge 1");
+            Console.WriteLine("2 - to see solution to Challenge 2");
+            Console.WriteLine("q - to quit the program");
             var selectedOption = Console.ReadLine();
 
             switch (selectedOption)
@@ -15,13 +18,22 @@ class MainMenu
                 case "1":
                     Prime.CountPrimesInRange();
                     break;
-                case "end":
-                    userFinished = true;
+                case "2":
+                    Even.DisplayEvenNumsInRange();
                     break;
+                case "q":
+                    userFinished = true;
+                    return;
                 default:
                     Console.WriteLine("Invalid option selected. Try or again or exit");
                     break;
             }
+            Console.WriteLine("\n\nPress enter key to continue or q to quit");
+            if (Console.ReadLine() == "q")
+            {
+                userFinished = true;
+            }
+
         }
     }
 }
