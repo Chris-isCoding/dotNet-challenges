@@ -12,6 +12,7 @@ class MainMenu
             Console.WriteLine("2 - to see solution to Challenge 2");
             Console.WriteLine("3 - to see solution to Challenge 3");
             Console.WriteLine("4 - to see solution to Challenge 4");
+            Console.WriteLine("5 - to see solution to Challenge 5");
             Console.WriteLine("q - to quit the program");
             var selectedOption = Console.ReadLine();
 
@@ -28,6 +29,9 @@ class MainMenu
                     break;
                 case "4":
                     Pyramid.DisplayPyramid();
+                    break;
+                case "5":
+                    Pow.DisplayPowOf3();
                     break;
                 case "q":
                     userFinished = true;
