@@ -23,7 +23,7 @@ public static class Helpers
         return true;
     }
 
-    public static int InputToInteger(string input, string dataTypeLabel)
+    public static int InputToInteger(string input, string dataTypeLabel = "number")
     {
         if (int.TryParse(input, out var integer)) return integer;
         Console.Write($"Please enter a {dataTypeLabel}: ");
