@@ -11,6 +11,7 @@ class MainMenu
             Console.WriteLine("1 - to see solution to Challenge 1");
             Console.WriteLine("2 - to see solution to Challenge 2");
             Console.WriteLine("3 - to see solution to Challenge 3");
+            Console.WriteLine("4 - to see solution to Challenge 4");
             Console.WriteLine("q - to quit the program");
             var selectedOption = Console.ReadLine();
 
@@ -24,6 +25,9 @@ class MainMenu
                     break;
                 case "3":
                     Fibonacci.DisplayFibonacci();
+                    break;
+                case "4":
+                    Pyramid.DisplayPyramid();
                     break;
                 case "q":
                     userFinished = true;
