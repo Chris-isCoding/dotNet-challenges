@@ -13,6 +13,8 @@ class MainMenu
             Console.WriteLine("3 - to see solution to Challenge 3");
             Console.WriteLine("4 - to see solution to Challenge 4");
             Console.WriteLine("5 - to see solution to Challenge 5");
+            Console.WriteLine("6 - to see solution to Challenge 6");
+            Console.WriteLine("7 - to see solution to Challenge 7");
             Console.WriteLine("q - to quit the program");
             var selectedOption = Console.ReadLine();
 
@@ -32,6 +34,12 @@ class MainMenu
                     break;
                 case "5":
                     Pow.DisplayPowOf3();
+                    break;
+                case "6":
+                    Sum.Floats();
+                    break;
+                case "7":
+                    Diamond.PrintDiamond();
                     break;
                 case "q":
                     userFinished = true;
