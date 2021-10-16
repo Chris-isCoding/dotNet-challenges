@@ -16,6 +16,7 @@ class MainMenu
             Console.WriteLine("6 - to see solution to Challenge 6");
             Console.WriteLine("7 - to see solution to Challenge 7");
             Console.WriteLine("8 - to see solution to Challenge 8");
+            Console.WriteLine("9 - to see solution to Challenge 9");
             Console.WriteLine("q - to quit the program");
             var selectedOption = Console.ReadLine();
 
@@ -45,8 +46,10 @@ class MainMenu
                 case "8":
                     Reverse.ReverseString();
                     break;
+                case "9":
+                    Binary.ConvertToBinary();
+                    break;
                 case "q":
-                    userFinished = true;
                     return;
                 default:
                     Console.WriteLine("Invalid option selected. Try or again or exit");
