@@ -17,7 +17,9 @@ class MainMenu
             Console.WriteLine("7 - to see solution to Challenge 7");
             Console.WriteLine("8 - to see solution to Challenge 8");
             Console.WriteLine("9 - to see solution to Challenge 9");
+            Console.WriteLine("0 - to see solution to Challenge 10");
             Console.WriteLine("q - to quit the program");
+
             var selectedOption = Console.ReadLine();
 
             switch (selectedOption)
@@ -48,6 +50,9 @@ class MainMenu
                     break;
                 case "9":
                     Binary.ConvertToBinary();
+                    break;
+                case "0":
+                    LeastCommonMultiple.FindLcm();
                     break;
                 case "q":
                     return;
