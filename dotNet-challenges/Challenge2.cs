@@ -8,12 +8,8 @@ public class Even
         var num = 0;
         do
         {
-            if (num % 2 == 0)
-            {
-                Console.WriteLine(num);
-            }
-
-            num++;
+            Console.Write("{num} ");
+            num += 2;
         } while (num <= 1000);
     }
 }
