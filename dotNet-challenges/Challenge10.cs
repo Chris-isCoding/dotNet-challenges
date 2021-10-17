@@ -22,9 +22,9 @@ public class LeastCommonMultiple
             lesserValue = secondNum;
             greaterValue = firstNum;
         }
-        for (var i = lesserValue; i <= firstNum * secondNum; i += lesserValue)
+        for (var i = greaterValue; i <= firstNum * secondNum; i += greaterValue)
         {
-            if (i % greaterValue == 0)
+            if (i % lesserValue == 0)
             {
                 Console.WriteLine(i);
                 break;
